@@ -1,0 +1,261 @@
+/* Font Awesome */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=4.0.3');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fa {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook:before {
+	content: "\f09a";
+}
+.fa-twitter:before {
+	content: "\f099";
+}
+.fa-google-plus:before {
+	content: "\f0d5";
+}
+.fa-linkedin:before {
+	content: "\f0e1";
+}
+.fa-instagram:before {
+	content: "\f16d";
+}
+.fa-dribbble:before {
+	content: "\f17d";
+}
+.fa-skype:before {
+	content: "\f17e";
+}
+
+/* general styling */
+body {
+	font-family: Inconsolata, monospace;
+	line-height: 2;
+	background-color: #c0a890;
+	color: #e4d7d1;
+	text-align: center;
+	margin: 0;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 3rem;
+}
+
+/* add responsive image handling */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.standard_width {
+	width: 100%;
+	max-width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.standard_padding {
+	/* Note here we use box-sizing as required instead of using the '*' selector */
+	box-sizing: border-box;
+	padding: 6rem 3rem;
+}
+
+.doc_header_inner {
+	border: 1rem solid rgba(255, 255, 255, 0.5);
+	background-color: #242320;
+	background-clip: padding-box;
+	padding-top: 4rem;
+	padding-bottom: 2.5rem;
+	text-align: center;
+}
+
+h1.doc_header_title {
+	font: normal 5.625rem/1.1em 'Noto Sans', serif;
+	color: #e4d7d1;
+	letter-spacing: -0.125rem;
+	margin: 0 auto 1rem auto;
+	text-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, .8);
+}
+
+p.doc_header_text {
+	line-height: 1.9;
+	color: #C2B6B2;
+	margin: 0 auto;
+	width: 70%;
+	text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .5);
+}
+
+.doc_header_text span,
+.doc_header_text a {
+	color: #BA7557;
+}
+
+.doc_header_inner hr {
+	width: 60%;
+	margin: 1.125rem auto 1.5rem auto;
+	border-color: #2F2D2E;
+	border-color: rgba(150, 150, 150, .1);
+}
+
+.doc_header_social {
+	margin: 1.5rem 0;
+	padding: 0;
+	font-size: 1.875rem;
+	text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .8);
+}
+
+.doc_header_social li {
+	display: inline-block;
+	margin: 0 1rem;
+	padding: 0;
+}
+
+.doc_header_social li a {
+	color: #BA7557;
+}
+
+.doc_header_social li a:hover {
+	color: #d77144;
+}
+
+/* Lazy load friendly cover image */
+.doc_header {
+	height: 100vh;
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+}
+
+.doc_header_bg {
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.doc_header_inner {
+	position: absolute;
+	width: 85vw;
+	max-width: 64rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.video_wrap {
+	background-color: #242320;
+	border-top: 0.25rem solid rgba(0,0,0,0.2);
+	border-bottom: 0.25rem solid rgba(0,0,0,0.2);
+}
+
+.iframe_wrap {
+	color: #2b2723;
+}
+
+.portfolio_wrap {
+	background-color: #f5f1ef;
+	color: #372f28;
+}
+
+.portfolio_inner {
+	padding: 4rem 6rem;
+}
+
+.portfolio_item {
+	box-sizing: border-box;
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 0.8rem;
+}
+
+.twitter_carousel_wrap {
+	background-color: #242320;
+	text-align: center;
+}
+
+.twitter_carousel {
+	width: 500px;
+	max-width: 90%;
+	min-width: 325px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slides {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.slides > div > div {
+	max-width: 100%;
+}
+
+.carousel-button {
+	height: 53px;
+	width: 38px;
+	background-color: transparent;
+	position: absolute;
+	cursor: pointer;
+}
+
+.prev {
+	top: 50%;
+	left: -100px
+}
+
+.next {
+	top: 50%;
+	right: -100px
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+@media (max-width: 60rem){
+	.portfolio_inner {
+		padding: 4rem 2rem;
+	}
+}
+
+@media (max-width: 45rem){
+	.portfolio_item {
+		width: 50%;
+	}
+	.carousel-button {
+		height: 27px;
+		width: 19px;
+	}
+	.carousel-button svg {
+		max-width: 100%;
+	}
+	.prev {
+		left: -40px
+	}
+	.next {
+		right: -40px
+	}
+}
+
+@media (max-width: 35rem){
+	h1.doc_header_title {
+		font-size: 12vw;
+	}
+}

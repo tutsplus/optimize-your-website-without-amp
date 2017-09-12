@@ -1,0 +1,13 @@
+ - [ ] Should load as fast, or faster, than an AMP version of the same site
+ - [ ] Load webfonts as early as possible to get them coming in
+ - [ ] Efficient, small size CSS loaded inline in the head section
+ - [ ] Write CSS in external files for more practical development
+ - [ ] Combine and minify JavaScript
+ - [ ] Setup a build process to make the above two things happen (we'll use Gulp)
+ - [ ] Use only async JavaScript
+ - [ ] Defer JavaScript so it doesn't block rendering (run JS at the right time)
+ - [ ] Vanilla JS so no JS dependencies to minimize the amount of code to load
+ - [ ] Prefer simple JS
+ - [ ] Create no JS fallbacks wherever possible
+ - [ ] Use lazy loading on images and iframes (videos etc)
+ - [ ] Prevent reflow to avoid layout recalculation

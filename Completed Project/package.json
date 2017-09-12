@@ -1,0 +1,25 @@
+{
+  "name": "optimize-without-amp",
+  "version": "1.0.0",
+  "description": "Starter files for course on how to optimize your website without AMP",
+  "author": "Kezz Bracey",
+  "license": "GPL",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-include-source": "0.0.5",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "pug": "^2.0.0-rc.3"
+  },
+  "dependencies": {
+    "baguettebox.js": "^1.8.2",
+    "lazysizes": "^4.0.0-rc3",
+    "siema": "^1.4.6"
+  }
+}

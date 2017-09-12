@@ -1,0 +1,26 @@
+.fa {
+	font-family: "Noto Sans";
+	font-weight: bold;
+	font-size: 1.125rem;
+}
+.fa-facebook:before {
+	content: "FB";
+}
+.fa-twitter:before {
+	content: "Twitter";
+}
+.fa-google-plus:before {
+	content: "G+";
+}
+.fa-linkedin:before {
+	content: "LinkedIn";
+}
+.fa-instagram:before {
+	content: "Instagram";
+}
+.fa-dribbble:before {
+	content: "Dribbble";
+}
+.fa-skype:before {
+	content: "Skype";
+}
